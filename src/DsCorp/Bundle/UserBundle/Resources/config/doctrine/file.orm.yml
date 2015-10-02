@@ -1,0 +1,22 @@
+DsCorp\Bundle\UserBundle\Entity\file:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        file:
+            type: string
+            length: '120'
+        path:
+            type: string
+            length: '120'
+        metatags:
+            type: string
+            length: '120'
+        dateUpdate:
+            type: datetime
+    lifecycleCallbacks: {  }

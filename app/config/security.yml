@@ -1,0 +1,55 @@
+security:
+    encoders:        
+        DsCorp\Bundle\UserBundle\Entity\User:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+        Symfony\Component\Security\Core\User\User: plaintext
+    providers:
+        chain_provider:
+            chain:
+                providers: [in_memory, Usuario]
+        in_memory:
+            memory:
+                users:
+                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+        Usuario:
+            entity:
+                class: UserBundle:User
+                property: userName
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login:
+            pattern:  ^/login$
+            security: false
+
+        secured_area:
+            pattern:    ^/
+            anonymous:  ~
+            form_login:
+                login_path:  login
+                check_path:  login_check
+#                remember_me: true
+            logout:
+                path:   /logout
+                target: /login
+            #anonymous: ~
+            #http_basic: ssh://root@linx4.dscorp.com.mx:22023/var/www/html/wdstorage
+            #    realm: "Secured Demo Area"
+        main:
+            pattern: /.*
+            provider: Usuario
+            security: true
+            anonymous: true
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    #    - { path: ^/Inicio, roles: ROLE_USER } #todos tienen acceso por ser ROLE_USER
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+       # - { path: ^/, roles: [USER,ADMIN] }       
+

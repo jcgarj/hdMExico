@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Editar usuario</h1>
+   
+	{{ form_start(edit_form, {'attr': {'class': 'form_transaccion_edit'}}) }}		
+    	<div class="form-group">
+	        <label>Nombre de usuario</label>
+	            {{ form_widget(edit_form.userName, {'attr': {'class': 'form-control'}}) }}
+	        <span class="errorMsg">{{ form_errors(edit_form.userName) }}</span> 
+	    </div>
+	    <div class="form-group">
+	        <label>Password</label>
+	            {{ form_widget(edit_form.password.first, {'attr': {'class': 'form-control'}}) }}	        
+	    </div>
+	    <div class="form-group">
+	        <label>Confirma password</label>
+	            {{ form_widget(edit_form.password.second, {'attr': {'class': 'form-control'}}) }}
+	        <span class="errorMsg">{{ form_errors(edit_form.password) }}</span> 
+	    </div>
+	    <div class="form-group">
+	        <label>Rol</label>
+	            {{ form_widget(edit_form.rol_user, {'attr': {'class': 'form-control'}}) }}
+	        <span class="errorMsg">{{ form_errors(edit_form.rol_user) }}</span> 
+	    </div>
+		<button class="btn btn-success" type="submit">Guardar</button>
+        <button class="btn btn-default" type="reset">Limpiar</button>
+        <a class="btn btn-warning" href="{{ path('user') }}">Limpiar</a>
+    {{ form_end(edit_form) }}                     
+       
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>User</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Avatar</th>
+                <td><img src="{{ asset(entity.perfil.file.file|default('none.jpg'))}}" alt=""></td>
+            </tr>
+            <tr>
+                <th>Username</th>
+                <td>{{ entity.userName }}</td>
+            </tr>            
+            <tr>
+                <th>Salt</th>
+                <td>{{ entity.salt }}</td>
+            </tr>
+            <tr>
+                <th>Datecreate</th>
+                <td>{{ entity.dateCreate|date('Y-m-d H:i:s') }}</td>
+            </tr>           
+        </tbody>
+    </table>
+
+            <a class="btn btn-warning" href="{{ path('user') }}">
+            Regresar
+        </a>
+   
+{% endblock %}

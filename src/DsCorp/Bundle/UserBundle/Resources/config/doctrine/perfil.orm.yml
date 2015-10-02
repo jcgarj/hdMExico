@@ -1,0 +1,30 @@
+DsCorp\Bundle\UserBundle\Entity\perfil:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '60'
+        firtsName:
+            type: string
+            length: '60'
+        lastName:
+            type: string
+            length: '60'
+        email:
+            type: string
+            length: '120'
+        telephone:
+            type: string
+            length: '14'
+    manyToOne:
+        file:         
+            targetEntity: DsCorp\Bundle\UserBundle\Entity\file
+            cascade: ["persist"]
+    lifecycleCallbacks: {  }

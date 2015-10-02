@@ -1,0 +1,19 @@
+user_user:
+    resource: "@UserBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+user_role:
+    resource: "@UserBundle/Resources/config/routing/role.yml"
+    prefix:   /role
+
+user_perfil:
+    resource: "@UserBundle/Resources/config/routing/perfil.yml"
+    prefix:   /perfil
+
+user_file:
+    resource: "@UserBundle/Resources/config/routing/file.yml"
+    prefix:   /file
+
+user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UserBundle:Default:index }

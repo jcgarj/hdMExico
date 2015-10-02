@@ -1,0 +1,30 @@
+perfil:
+    path:     /
+    defaults: { _controller: "UserBundle:perfil:index" }
+
+perfil_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserBundle:perfil:show" }
+
+perfil_new:
+    path:     /new
+    defaults: { _controller: "UserBundle:perfil:new" }
+
+perfil_create:
+    path:     /create
+    defaults: { _controller: "UserBundle:perfil:create" }
+    methods:  POST
+
+perfil_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserBundle:perfil:edit" }
+
+perfil_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserBundle:perfil:update" }
+    methods:  [POST, PUT]
+
+perfil_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserBundle:perfil:delete" }
+    methods:  [POST, DELETE]

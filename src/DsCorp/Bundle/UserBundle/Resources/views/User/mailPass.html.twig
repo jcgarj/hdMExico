@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+  
+        <a href="{{ path('user_mailSucess', { 'token': token }) }}">
+           Click para recuperar
+        </a>
+   >
+{% endblock %}
