@@ -1,0 +1,84 @@
+<?php
+
+namespace DsCorp\Bundle\UserBundle\Entity;
+
+/**
+ * mensaje
+ */
+class mensaje
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $subjet;
+
+    /**
+     * @var string
+     */
+    private $body;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set subjet
+     *
+     * @param string $subjet
+     *
+     * @return mensaje
+     */
+    public function setSubjet($subjet)
+    {
+        $this->subjet = $subjet;
+
+        return $this;
+    }
+
+    /**
+     * Get subjet
+     *
+     * @return string
+     */
+    public function getSubjet()
+    {
+        return $this->subjet;
+    }
+
+    /**
+     * Set body
+     *
+     * @param string $body
+     *
+     * @return mensaje
+     */
+    public function setBody($body)
+    {
+        $this->body = $body;
+
+        return $this;
+    }
+
+    /**
+     * Get body
+     *
+     * @return string
+     */
+    public function getBody()
+    {
+        return $this->body;
+    }
+}
+

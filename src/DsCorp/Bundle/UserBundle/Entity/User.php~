@@ -47,6 +47,15 @@ class User implements UserInterface
      */
     private $userUpdate;
 
+     /**
+     * @var \DsCorp\Bundle\UserBundle\Entity\perfil
+     */
+    private $perfil;
+    
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $rol_user;
 
     /**
      * Get id
@@ -235,7 +244,7 @@ class User implements UserInterface
     public function getRoles()
     {
         $losroles=array();
-        foreach ($this->roles as $key) {
+        foreach ($this->rol_user as $key) {
             $losroles[]=$key->getName();
         }
         return $losroles;
@@ -244,12 +253,7 @@ class User implements UserInterface
 
   
     function eraseCredentials(){}
-    /**
-     * @var \DsCorp\Bundle\UserBundle\Entity\perfil
-     */
-    private $perfil;
-
-
+   
     /**
      * Set perfil
      *
@@ -272,5 +276,47 @@ class User implements UserInterface
     public function getPerfil()
     {
         return $this->perfil;
+    }
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->rol_user = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add rolUser
+     *
+     * @param \DsCorp\Bundle\UserBundle\Entity\role $rolUser
+     *
+     * @return User
+     */
+    public function addRolUser(\DsCorp\Bundle\UserBundle\Entity\role $rolUser)
+    {
+        $this->rol_user[] = $rolUser;
+
+        return $this;
+    }
+
+    /**
+     * Remove rolUser
+     *
+     * @param \DsCorp\Bundle\UserBundle\Entity\role $rolUser
+     */
+    public function removeRolUser(\DsCorp\Bundle\UserBundle\Entity\role $rolUser)
+    {
+        $this->rol_user->removeElement($rolUser);
+    }
+
+    /**
+     * Get rolUser
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRolUser()
+    {
+        return $this->rol_user;
     }
 }

@@ -1,3 +1,7 @@
+user_mensaje:
+    resource: "@UserBundle/Resources/config/routing/mensaje.yml"
+    prefix:   /mensaje
+
 user_user:
     resource: "@UserBundle/Resources/config/routing/user.yml"
     prefix:   /user

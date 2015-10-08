@@ -1,0 +1,27 @@
+DsCorp\Bundle\UserBundle\Entity\mensaje:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        subjet:
+            type: string
+            length: '120'
+        body:
+            type: text
+    manyToOne:
+        fromUser:         
+            targetEntity: DsCorp\Bundle\UserBundle\Entity\User
+    oneToMany:
+        toUser:
+            targetEntity: DsCorp\Bundle\UserBundle\Entity\User
+            mappedBy: mensaje
+        atach:         
+            targetEntity: DsCorp\Bundle\UserBundle\Entity\file
+            mappedBy: mensaje
+            cascade: ["persist"]
+    lifecycleCallbacks: {  }

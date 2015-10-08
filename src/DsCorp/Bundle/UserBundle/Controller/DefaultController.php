@@ -6,8 +6,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function headerAction()
     {
-        return $this->render('UserBundle:Default:index.html.twig', array('name' => $name));
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        if($user!='anon.'){
+             $usuario= $em->getRepository('UserBundle:User')->find($user->getId());                   
+        }
+        
+        return $this->render('::header.html.twig', array(
+            'usuario' => $usuario,           
+        ));
     }
 }

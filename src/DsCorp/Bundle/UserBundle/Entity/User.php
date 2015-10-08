@@ -319,4 +319,12 @@ class User implements UserInterface
     {
         return $this->rol_user;
     }
+
+     public function __toString() {      
+      if($this->perfil){
+         return $this->perfil->getName().' '.$this->perfil->getFirtsName().' '.$this->perfil->getLastName();
+      }else{
+         return '';
+      }
+     }
 }

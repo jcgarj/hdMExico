@@ -1,0 +1,30 @@
+mensaje:
+    path:     /
+    defaults: { _controller: "UserBundle:mensaje:index" }
+
+mensaje_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserBundle:mensaje:show" }
+
+mensaje_new:
+    path:     /new
+    defaults: { _controller: "UserBundle:mensaje:new" }
+
+mensaje_create:
+    path:     /create
+    defaults: { _controller: "UserBundle:mensaje:create" }
+    methods:  POST
+
+mensaje_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserBundle:mensaje:edit" }
+
+mensaje_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserBundle:mensaje:update" }
+    methods:  [POST, PUT]
+
+mensaje_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserBundle:mensaje:delete" }
+    methods:  [POST, DELETE]

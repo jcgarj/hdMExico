@@ -196,4 +196,9 @@ class perfil
     {
         return $this->file;
     }
+
+     public function __toString() { 
+        return $this->name.' '.$this->firtsName.' '.$this->lastName;
+
+     }
 }
