@@ -1,10 +1,10 @@
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /usuario
 
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
 login:
     pattern:   /login
     defaults:  { _controller: UserBundle:Security:login }
