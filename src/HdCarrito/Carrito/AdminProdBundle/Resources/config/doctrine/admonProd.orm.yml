@@ -1,0 +1,28 @@
+HdCarrito\Carrito\AdminProdBundle\Entity\admonProd:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '60'
+        descripcion:
+            type: string
+            length: '150'
+        contenido:
+            type: string
+            length: '60'
+        precio:
+            type: decimal
+        precioAnte:
+            type: decimal
+    oneToMany:
+        itemCart:
+            targetEntity:  HdCarrito\Carrito\CartBundle\Entity\itemCart
+            mappedBy: admonProd
+    lifecycleCallbacks: {  }

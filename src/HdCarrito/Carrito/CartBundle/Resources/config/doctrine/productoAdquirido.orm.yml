@@ -1,0 +1,15 @@
+HdCarrito\Carrito\CartBundle\Entity\productoAdquirido:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fecha:
+            type: datetime
+        precio:
+            type: decimal
+    lifecycleCallbacks: {  }

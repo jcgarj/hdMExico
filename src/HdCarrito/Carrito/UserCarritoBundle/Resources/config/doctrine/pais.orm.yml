@@ -1,0 +1,24 @@
+HdCarrito\Carrito\UserCarritoBundle\Entity\pais:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        pais:
+            type: string
+            length: '50'
+    oneToMany:
+        estado:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\estado
+            mappedBy: pais
+        dele_muni:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\dele_muni
+            mappedBy: pais
+        Usuario:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\Usuario
+            mappedBy: pais
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+HdCarrito\Carrito\UserCarritoBundle\Entity\estado:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        estado:
+            type: string
+            length: '50'
+    oneToMany:
+        dele_muni:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\dele_muni
+            mappedBy: estado
+        Usuario:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\Usuario
+            mappedBy: estado
+    manyToOne:
+        pais:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\pais
+            joinTable:
+                name: pais_id
+                joinColumns:
+                    pais_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    estado_id:
+                        referencedColumnName: id
+            mappedBy: estado
+    lifecycleCallbacks: {  }

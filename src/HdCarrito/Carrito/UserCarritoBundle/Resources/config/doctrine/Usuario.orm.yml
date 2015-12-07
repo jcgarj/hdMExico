@@ -1,0 +1,99 @@
+HdCarrito\Carrito\UserCarritoBundle\Entity\Usuario:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '50'
+        apPat:
+            type: string
+            length: '50'
+            column: ap_pat
+        apMat:
+            type: string
+            length: '50'
+            column: ap_mat
+        correo:
+            type: string
+            length: '60'
+        password:
+            type: string
+            length: '60'
+        cPassword:
+            type: string
+            length: '60'
+            column: c_password
+        razonSocial:
+            type: string
+            length: '100'
+            column: razon_social
+        rfc:
+            type: string
+            length: '20'
+        rTributario:
+            type: string
+            length: '100'
+            column: r_tributario
+        calle:
+            type: string
+            length: '50'
+        noExt:
+            type: integer
+            column: no_ext
+        noInt:
+            type: integer
+            column: no_int
+        colonia:
+            type: string
+            length: '60'
+        cPostal:
+            type: string
+            length: '30'
+            column: c_postal
+        localidad:
+            type: string
+            length: '60'
+        telefono:
+            type: string
+            length: '15'
+    manyToOne:
+        pais:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\pais
+            joinTable:
+                name: pais_id
+                joinColumns:
+                    pais_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    Usuario_id:
+                        referencedColumnName: id
+            mappedBy: Usuario
+        estado:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\estado
+            joinTable:
+                name: estado_id
+                joinColumns:
+                    estado_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    Usuario_id:
+                        referencedColumnName: id
+            mappedBy: Usuario
+        dele_muni:
+            targetEntity: HdCarrito\Carrito\UserCarritoBundle\Entity\dele_muni
+            joinTable:
+                name: dele_muni_id
+                joinColumns:
+                    dele_muni_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    Usuario_id:
+                        referencedColumnName: id
+            mappedBy: Usuario
+    lifecycleCallbacks: {  }

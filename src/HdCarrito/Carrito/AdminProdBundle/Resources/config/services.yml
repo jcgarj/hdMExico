@@ -1,0 +1,4 @@
+services:
+#    admin_prod.example:
+#        class: HdCarrito\Carrito\AdminProdBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

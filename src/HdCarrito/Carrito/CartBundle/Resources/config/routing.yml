@@ -1,0 +1,19 @@
+cart_producto:
+    resource: "@CartBundle/Resources/config/routing/producto.yml"
+    prefix:   /producto
+
+cart_productoadquirido:
+    resource: "@CartBundle/Resources/config/routing/productoadquirido.yml"
+    prefix:   /productoadquirido
+
+cart_itemcart:
+    resource: "@CartBundle/Resources/config/routing/itemcart.yml"
+    prefix:   /itemcart
+
+cart_carrito:
+    resource: "@CartBundle/Resources/config/routing/carrito.yml"
+    prefix:   /carrito
+
+cart_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CartBundle:Default:index }

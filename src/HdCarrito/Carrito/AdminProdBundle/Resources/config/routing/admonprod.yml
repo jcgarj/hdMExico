@@ -1,0 +1,34 @@
+admonprod:
+    path:     /
+    defaults: { _controller: "AdminProdBundle:admonProd:index" }
+
+admonprod_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminProdBundle:admonProd:show" }
+
+admonprod_new:
+    path:     /new
+    defaults: { _controller: "AdminProdBundle:admonProd:new" }
+
+admonprod_create:
+    path:     /create
+    defaults: { _controller: "AdminProdBundle:admonProd:create" }
+    methods:  POST
+
+admonprod_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminProdBundle:admonProd:edit" }
+
+admonprod_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminProdBundle:admonProd:update" }
+    methods:  [POST, PUT]
+
+admonprod_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminProdBundle:admonProd:delete" }
+    methods:  [POST, DELETE]
+
+Default_admonprod:
+    path:     /admonprod
+    defaults: { _controller: "AdminProdBundle:Default:index" }

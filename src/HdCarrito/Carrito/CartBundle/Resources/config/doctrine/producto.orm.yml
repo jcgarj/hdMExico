@@ -1,0 +1,22 @@
+HdCarrito\Carrito\CartBundle\Entity\producto:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '50'
+        descripcion:
+            type: string
+            length: '250'
+        precio:
+            type: decimal
+        img:
+            type: string
+            length: '50'
+    lifecycleCallbacks: {  }

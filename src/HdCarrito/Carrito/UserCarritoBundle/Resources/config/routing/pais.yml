@@ -1,0 +1,30 @@
+pais:
+    path:     /
+    defaults: { _controller: "UserCarritoBundle:pais:index" }
+
+pais_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserCarritoBundle:pais:show" }
+
+pais_new:
+    path:     /new
+    defaults: { _controller: "UserCarritoBundle:pais:new" }
+
+pais_create:
+    path:     /create
+    defaults: { _controller: "UserCarritoBundle:pais:create" }
+    methods:  POST
+
+pais_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserCarritoBundle:pais:edit" }
+
+pais_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserCarritoBundle:pais:update" }
+    methods:  [POST, PUT]
+
+pais_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserCarritoBundle:pais:delete" }
+    methods:  [POST, DELETE]

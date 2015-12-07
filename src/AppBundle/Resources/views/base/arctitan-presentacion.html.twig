@@ -1,6 +1,7 @@
 {% extends '::base_app.html.twig' %}
 {% block title %}
 <title>HD México | ArcTitan</title>
+
 {% endblock %}
 
 
@@ -8,6 +9,17 @@
 
 
 {% block body %}
+  <style type="text/css">
+.single.singular #main #primary #content .post.hentry.format-image .entry-content .active {
+  font-style: italic;
+  text-align: center;
+  color: #999999;
+}
+.single.singular #main #primary #content .post.hentry.format-image .entry-content table tr td p {
+  font-size: 12px;
+  text-align: justify;
+}
+</style>
 <div id="main">
 
 <div id="primary">
@@ -78,6 +90,8 @@
   <hr /><!-- #primary -->
 
 </div><!-- #main -->
+
+
 
 {% endblock %}
 

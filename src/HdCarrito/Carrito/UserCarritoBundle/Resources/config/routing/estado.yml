@@ -1,0 +1,30 @@
+estado:
+    path:     /
+    defaults: { _controller: "UserCarritoBundle:estado:index" }
+
+estado_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserCarritoBundle:estado:show" }
+
+estado_new:
+    path:     /new
+    defaults: { _controller: "UserCarritoBundle:estado:new" }
+
+estado_create:
+    path:     /create
+    defaults: { _controller: "UserCarritoBundle:estado:create" }
+    methods:  POST
+
+estado_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserCarritoBundle:estado:edit" }
+
+estado_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserCarritoBundle:estado:update" }
+    methods:  [POST, PUT]
+
+estado_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserCarritoBundle:estado:delete" }
+    methods:  [POST, DELETE]

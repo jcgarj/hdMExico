@@ -1,0 +1,19 @@
+user_carrito_dele_muni:
+    resource: "@UserCarritoBundle/Resources/config/routing/dele_muni.yml"
+    prefix:   /dele_muni
+
+user_carrito_estado:
+    resource: "@UserCarritoBundle/Resources/config/routing/estado.yml"
+    prefix:   /estado
+
+user_carrito_pais:
+    resource: "@UserCarritoBundle/Resources/config/routing/pais.yml"
+    prefix:   /pais
+
+user_carrito_usuario:
+    resource: "@UserCarritoBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario
+
+user_carrito_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UserCarritoBundle:Default:index }

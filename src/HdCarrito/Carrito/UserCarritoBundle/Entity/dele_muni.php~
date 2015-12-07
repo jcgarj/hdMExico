@@ -1,0 +1,55 @@
+<?php
+
+namespace HdCarrito\Carrito\UserCarritoBundle\Entity;
+
+/**
+ * dele_muni
+ */
+class dele_muni
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $deleMuni;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set deleMuni
+     *
+     * @param string $deleMuni
+     *
+     * @return dele_muni
+     */
+    public function setDeleMuni($deleMuni)
+    {
+        $this->deleMuni = $deleMuni;
+
+        return $this;
+    }
+
+    /**
+     * Get deleMuni
+     *
+     * @return string
+     */
+    public function getDeleMuni()
+    {
+        return $this->deleMuni;
+    }
+}
+

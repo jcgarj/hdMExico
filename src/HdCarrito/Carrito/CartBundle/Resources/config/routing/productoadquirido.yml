@@ -1,0 +1,30 @@
+productoadquirido:
+    path:     /
+    defaults: { _controller: "CartBundle:productoAdquirido:index" }
+
+productoadquirido_show:
+    path:     /{id}/show
+    defaults: { _controller: "CartBundle:productoAdquirido:show" }
+
+productoadquirido_new:
+    path:     /new
+    defaults: { _controller: "CartBundle:productoAdquirido:new" }
+
+productoadquirido_create:
+    path:     /create
+    defaults: { _controller: "CartBundle:productoAdquirido:create" }
+    methods:  POST
+
+productoadquirido_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CartBundle:productoAdquirido:edit" }
+
+productoadquirido_update:
+    path:     /{id}/update
+    defaults: { _controller: "CartBundle:productoAdquirido:update" }
+    methods:  [POST, PUT]
+
+productoadquirido_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CartBundle:productoAdquirido:delete" }
+    methods:  [POST, DELETE]

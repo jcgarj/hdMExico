@@ -1,0 +1,112 @@
+{% extends '::base_app.html.twig' %}
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.min.css') }}"> 
+<link rel="stylesheet" type="text/css" href="{{ asset('css/compiled/elements.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/compiled/layout.css') }}">
+{% endblock %}
+{% block body -%}
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="main-box">
+			<header class="main-box-header clearfix">
+				<h1>Registro de Usuario</h1>
+			</header>
+		<div class="main-box-body clearfix">
+			<div role="form">
+			{{ form_start(form) }}
+				<div class="row">
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.nombre)}}
+    					{{ form_widget(form.nombre, {attr: {'class':'form-control', 'placeholder':'Nombre'}})}}
+					</div>
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.apPat)}}
+    					{{ form_widget(form.apPat, {attr: {'class':'form-control', 'placeholder':'Apellido Paterno'}})}}
+					</div>
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.apMat)}}
+    					{{ form_widget(form.apMat, {attr: {'class':'form-control', 'placeholder':'Apellido MAterno'}})}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.correo)}}
+    					{{ form_widget(form.correo, {attr: {'class':'form-control', 'placeholder':'Correo'}})}}
+					</div>
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.password)}}
+    					{{ form_widget(form.password, {attr: {'class':'form-control', 'placeholder':'Password'}})}}
+					</div>
+					<div class="form-group col-xs-4">
+						{{ form_errors(form.cPassword)}}
+    					{{ form_widget(form.cPassword, {attr: {'class':'form-control', 'placeholder':'Confirmar Password'}})}}
+					</div>
+				</div>
+				<div class="row">
+					<header class="main-box-header clearfix">
+						<h1>Datos de Facturacion</h1>
+					</header>
+				</div>
+				<div class="row">
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.razonSocial)}}
+    					{{ form_widget(form.razonSocial, {attr: {'class':'form-control', 'placeholder':'Razon Social'}})}}
+					</div>
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.rfc)}}
+    					{{ form_widget(form.rfc, {attr: {'class':'form-control', 'placeholder':'RFC'}})}}
+					</div>
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.rTributario)}}
+    					{{ form_widget(form.rTributario, {attr: {'class':'form-control', 'placeholder':'Regimen Tributario'}})}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.calle)}}
+    					{{ form_widget(form.calle, {attr: {'class':'form-control', 'placeholder':'Calle'}})}}
+					</div>
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.noExt)}}
+    					{{ form_widget(form.noExt, {attr: {'class':'form-control', 'placeholder':'Numero Exterior'}})}}
+					</div>
+					<div class="form-groups col-xs-4">
+						{{ form_errors(form.noInt)}}
+    					{{ form_widget(form.noInt, {attr: {'class':'form-control', 'placeholder':'Numero Interior'}})}}
+					</div>
+				</div>
+				<div class="row">
+					{{ form_errors(form.colonia)}}
+    				{{ form_widget(form.colonia, {attr: {'class':'form-control', 'placeholder':'colonia'}})}}
+    				
+    				{{ form_errors(form.cPostal)}}
+    				{{ form_widget(form.cPostal, {attr: {'class':'form-control', 'placeholder':'Codigo Postal'}})}}
+    				
+    				{{ form_errors(form.localidad)}}
+    				{{ form_widget(form.localidad, {attr: {'class':'form-control', 'placeholder':'Localidad'}})}}
+    				
+    				{{ form_errors(form.telefono)}}
+    				{{ form_widget(form.telefono, {attr: {'class':'form-control', 'placeholder':'Telefono'}})}}
+
+    				{{ form_errors(form.pais)}}
+    				{{ form_widget(form.pais, {attr: {'class':'form-control', 'placeholder':'Pais'}})}}
+
+    				{{ form_errors(form.estado)}}
+    				{{ form_widget(form.estado, {attr: {'class':'form-control', 'placeholder':'Estado'}})}}
+
+    				{{ form_errors(form.dele_muni)}}
+    				{{ form_widget(form.dele_muni, {attr: {'class':'form-control', 'placeholder':'Delegacion o Municipio'}})}}
+				</div>
+				{{form_widget(form._token) }}
+				<button class="btn btn-lg green m-icon-big">
+					Aceptar
+				</button>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+        
+{% endblock %}

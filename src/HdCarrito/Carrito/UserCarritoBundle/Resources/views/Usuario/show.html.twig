@@ -1,0 +1,92 @@
+{% extends '::base_app.html.twig' %}
+
+{% block body -%}
+    <h1>Usuario</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Appat</th>
+                <td>{{ entity.apPat }}</td>
+            </tr>
+            <tr>
+                <th>Apmat</th>
+                <td>{{ entity.apMat }}</td>
+            </tr>
+            <tr>
+                <th>Correo</th>
+                <td>{{ entity.correo }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ entity.password }}</td>
+            </tr>
+            <tr>
+                <th>Cpassword</th>
+                <td>{{ entity.cPassword }}</td>
+            </tr>
+            <tr>
+                <th>Razonsocial</th>
+                <td>{{ entity.razonSocial }}</td>
+            </tr>
+            <tr>
+                <th>Rfc</th>
+                <td>{{ entity.rfc }}</td>
+            </tr>
+            <tr>
+                <th>Rtributario</th>
+                <td>{{ entity.rTributario }}</td>
+            </tr>
+            <tr>
+                <th>Calle</th>
+                <td>{{ entity.calle }}</td>
+            </tr>
+            <tr>
+                <th>Noext</th>
+                <td>{{ entity.noExt }}</td>
+            </tr>
+            <tr>
+                <th>Noint</th>
+                <td>{{ entity.noInt }}</td>
+            </tr>
+            <tr>
+                <th>Colonia</th>
+                <td>{{ entity.colonia }}</td>
+            </tr>
+            <tr>
+                <th>Cpostal</th>
+                <td>{{ entity.cPostal }}</td>
+            </tr>
+            <tr>
+                <th>Localidad</th>
+                <td>{{ entity.localidad }}</td>
+            </tr>
+            <tr>
+                <th>Telefono</th>
+                <td>{{ entity.telefono }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('usuario') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('usuario_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

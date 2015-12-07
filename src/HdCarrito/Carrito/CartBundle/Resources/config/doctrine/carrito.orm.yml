@@ -1,0 +1,17 @@
+HdCarrito\Carrito\CartBundle\Entity\carrito:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        estatus:
+            type: string
+            length: '50'
+        llave:
+            type: string
+            length: '60'
+    lifecycleCallbacks: {  }

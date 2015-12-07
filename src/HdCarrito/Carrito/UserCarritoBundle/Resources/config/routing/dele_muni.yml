@@ -1,0 +1,30 @@
+dele_muni:
+    path:     /
+    defaults: { _controller: "UserCarritoBundle:dele_muni:index" }
+
+dele_muni_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserCarritoBundle:dele_muni:show" }
+
+dele_muni_new:
+    path:     /new
+    defaults: { _controller: "UserCarritoBundle:dele_muni:new" }
+
+dele_muni_create:
+    path:     /create
+    defaults: { _controller: "UserCarritoBundle:dele_muni:create" }
+    methods:  POST
+
+dele_muni_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserCarritoBundle:dele_muni:edit" }
+
+dele_muni_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserCarritoBundle:dele_muni:update" }
+    methods:  [POST, PUT]
+
+dele_muni_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserCarritoBundle:dele_muni:delete" }
+    methods:  [POST, DELETE]

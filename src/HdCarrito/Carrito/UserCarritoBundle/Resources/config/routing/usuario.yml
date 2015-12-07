@@ -1,0 +1,30 @@
+usuario:
+    path:     /
+    defaults: { _controller: "UserCarritoBundle:Usuario:index" }
+
+usuario_show:
+    path:     /{id}/show
+    defaults: { _controller: "UserCarritoBundle:Usuario:show" }
+
+usuario_new:
+    path:     /new
+    defaults: { _controller: "UserCarritoBundle:Usuario:new" }
+
+usuario_create:
+    path:     /create
+    defaults: { _controller: "UserCarritoBundle:Usuario:create" }
+    methods:  POST
+
+usuario_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UserCarritoBundle:Usuario:edit" }
+
+usuario_update:
+    path:     /{id}/update
+    defaults: { _controller: "UserCarritoBundle:Usuario:update" }
+    methods:  [POST, PUT]
+
+usuario_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UserCarritoBundle:Usuario:delete" }
+    methods:  [POST, DELETE]

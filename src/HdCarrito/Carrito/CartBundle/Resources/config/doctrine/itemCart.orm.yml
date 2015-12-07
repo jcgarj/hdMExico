@@ -1,0 +1,28 @@
+HdCarrito\Carrito\CartBundle\Entity\itemCart:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        cantidad:
+            type: integer
+        cantidadPedido:
+            type: integer
+            column: cantidad_Pedido
+        precioU:
+            type: decimal
+            column: Precio_u
+    manyToOne:
+        carrito:
+          targetEntity: HdCarrito\Carrito\CartBundle\Entity\carrito
+        admonProd:
+          targetEntity: HdCarrito\Carrito\AdminProdBundle\Entity\admonProd
+          inversedBy: itemCart 
+          joinColumn:
+             name: admonProd_id
+             referencedColumnName: id
+    lifecycleCallbacks: {  }

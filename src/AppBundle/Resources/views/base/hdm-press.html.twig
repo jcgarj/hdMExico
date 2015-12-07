@@ -1,14 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="es-419">
-<head>
-<meta charset="utf-8">
+{% extends '::base_app.html.twig' %}
+{% block title %}
 <title>HD México | Prensa</title>
+{% endblock %}
 
 
 
-
-
-
+{% block body %}
 <style type="text/css">
 .single.singular #main #primary #content .post.hentry.format-image .entry-content .active {
 	font-style: italic;
@@ -20,153 +17,8 @@
 	text-align: justify;
 }
 </style>
-<!--[if IE 8]>
-
-<![endif]-->
-<!--[if IE 9]>
-
-<![endif]-->
 
 
-
-
-
-
-
-<script>
-  
-</script>
-</head>
-<body class="single singular">
-<div id="page" class="hfeed">
-<div id="wrapper">
-<header id="branding" role="banner">
-<h1 id="site-title"> 
-  	<a href="index.html" title="HD México" rel="home">
-  <img src="style/images/logo.png" alt="HD México" /><img src="style/images/marca2.png"></a></h1>
-  <div class="social">
-    <ul>
-      <li><a href="https://www.facebook.com/HabeasDataMx" target="_blank"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
-      <li><a href="https://twitter.com/HabeasDataMx" target="_blank"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-      <li><a href="http://www.slideshare.net/hdlatinoamerica" target="_blank"><img src="style/images/icon-slideshare.png" alt="Slide Share" /></a></li>
-    </ul>
-</div>
-  <nav id="access" class="access" role="navigation">
-        <div id="menu" class="menu">
-        	<ul id="tiny">
-				<li><a href="index.html">Home</a>
-					<ul>
-			            <li><a href="somos.htm">Nosotros</a></li>
-                        <li><a href="contacto.htm">Contacto</a></li>
-                        <li><a href="canales.htm">Canales</a></li>
-                        <li><a href="blog.htm">Blog</a></li>
-                        <li><a href="hdm-press.htm">Prensa</a></li>
-                        <li><a href="mapa.htm">Mapa del sitio</a></li>
-			        </ul>
-				</li>
-				<li><a href="spamtitan-presentacion.htm">SpamTitan</a>
-                	<ul>
-			            <li><a href="spamtitan-productos.htm">Productos</a>
-							<ul>
-                       			<li><a href="spamtitan-cloud.htm">SpamTitan Cloud</a></li>
-                        		<li><a href="spamtitan-pcloud.htm">SpamTitan Private Cloud</a></li>
-                       			<li><a href="spamtitan-gateway.htm">SpamTitan Gateway</a></li>
-			        		</ul>
-						</li>
-                        <li><a href="spamtitan-esptec.htm">Especifícaciones técnicas</a></li>
-                        <li><a href="spamtitan-download.htm">Descargas</a></li>
-                        <li><a href="spamtitan-requerimientos.htm">Requerimientos</a></li>
-                     </ul>
-                </li>                  
-				<li><a href="webtitan-presentacion.htm">WebTitan</a>
-                	<ul>
-			            <li><a href="webtitan-productos.htm">Productos</a>
-							<ul>
-                       			<li><a href="webtitan-cloud.htm">WebTitan Cloud</a></li>
-                        		<li><a href="webtitan-wifi.htm">WebTitan Wi-Fi</a></li>
-                       			<li><a href="webtitan-gateway.htm">WebTitan Gateway</a></li>
-			        		</ul>
-						</li>
-                        <li><a href="webtitan-esptec.htm">Especifícaciones técnicas</a></li>
-                        <li><a href="webtitan-download.htm">Descargas</a></li>
-                        <li><a href="webtitan-requerimientos.htm">Requerimientos</a></li>
-                     </ul>
-                </li>
-				<li><a href="arctitan-presentacion.htm">ArcTitan</a></li>
-				<li><a href="isl-inicio.htm">ISL Online</a>
-                	<ul>
-			            <li><a href="isl-light.htm">Soporte Remoto</a></li>
-						<li><a href="isl-alwayson.htm">Acceso Remoto</a></li>
-                        <li><a href="isl-pronto.htm">Web Chat</a></li>
-                        <li><a href="isl-groop.htm">Conferencia Web</a></li>
-                       	<li><a href="isl-funciones.htm">Funciones</a></li>
-                        <li><a href="isl-tools.htm">Tools</a></li>
-                       	<li><a href="isl-descargas.htm">Descargas</a></li>
-                    </ul>
-                </li>
-                <li><a href="trustwave.htm">Trustwave</a>
-                	<ul>
-			            <li><a href="trustwave-cumplimiento.htm">Cumplimiento</a></li>
-                        <li><a href="trustwave-spiderlabs.htm">Spiderlabs</a></li>
-                        <li><a href="trustwave-security.htm">Gestión de seguridad</a></li>
-                     </ul>
-                </li>
-				<li><a href="ultrabac.htm">Ultrabac</a>
-                	<ul>
-			            <li><a href="ultrabac-ubdr.htm">Ultrabac UBDR Gold</a></li>
-						<li><a href="ultrabac-bundle.htm">Ultrabac Ultimate Bundle</a></li>
-                        <li><a href="ultrabac-requerimientos.htm">Requerimientos</a></li>
-                        <li><a href="ftp://ftp.ultrabac.com/pub/ub_versions/current_release/ub9-eng.zip">Descarga</a></li>
-                        <li><a href="style/docs/UB92-Manual.pdf">Manual de usuario</a></li>                        
-                  	</ul>                
-                </li>
-				<li><a href="eset-productos.htm">ESET</a>
-                	<ul>
-			            <li><a href="pres-eset-business.htm">Soluciones corporativas</a>
-                			<ul>                
- 			            		<li><a href="eesecurity.htm">Seguridad para endpoints</a></li>
-								<li><a href="eeantivirus.htm">Protección unificada</a></li>
-                                <li><a href="eremotea.htm">Administración remota</a></li>
-                                <li><a href="#.htm">Dispositivos móviles</a></li>
-                                <li><a href="#.htm">Servidores de correo</a></li>
-                                <li><a href="#.htm">Servidores de archivo</a></li>                                
-                                <li><a href="#.htm">Servidores Gateway</a></li>
-                                <li><a href="esaut.htm">Autenticación</a></li>
-                                <li><a href="edeslock.htm">Cifrado</a></li>
-                                <li><a href="eset-bss.htm">Protección integral</a></li>
-                  			</ul>
-                        </li> 
-						<li><a href="pres-eset-home.htm">Soluciones hogar</a>
-                			<ul>                
- 			            		<li><a href="ess.htm">ESET Smart Security</a></li>
-								<li><a href="ena.htm">ESET NOD32 Antivirus</a></li>
-                                <li><a href="ecsp.htm">ESET Cybersecurity Pro para Mac</a></li>
-                                <li><a href="ecs.htm">ESET Cybersecurity para Mac</a></li>
-                                <li><a href="ems.htm">ESET Mobile Security</a></li>
-                                <li><a href="efsp.htm">ESET Family Security Pack</a></li>
-                  			</ul>                        
-                        </li>
-                        <li><a href="des-bs.htm">Descargas</a>
-                			<ul>                
- 			            		<li><a href="des-bs.htm">Soluciones corporativas</a></li>
-								<li><a href="des-hm.htm">Soluciones para hogar</a></li>
-                                <li><a href="des-gratuita.htm">Descarga TRIAL</a></li>
-                  			</ul>
-                		</li>
-                        <li><a href="eset-vs.htm">Por qué elegir ESET</a></li>
-                     </ul>
-                 </li>
-				 <li><a href="warriors-presentacion.htm">Warriors</a></li>
-				 <li><a href="soporte.htm">Soporte</a></li>
-				 <li><a href="contacto.htm">Contacto</a></li> 
-        	</ul>
-		</div>
-  </nav>
-		<div class="triangle-l"></div>
-		<div class="triangle-r"></div>
-  <!-- #access --> 
-</header>
-<!-- #branding -->
 <div id="main">
 <div id="primary">
   <div id="content" role="main">
@@ -183,8 +35,8 @@
 
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-feria.jpg" alt="" width="250" height="543" class="aligncenter" />
-            <p><img src="style/images/hdmexico-feria1.jpg" alt="" width="250" height="543" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-feria.jpg')}}" alt="" width="250" height="543" class="aligncenter" />
+            <p><img src="{{asset('bundles/app/style/images/hdmexico-feria1.jpg')}}" alt="" width="250" height="543" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>HD México: una feria dentro de la Feria</h1>
@@ -209,7 +61,7 @@
 		</div>
 	  </div>
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-faustoescobar3.jpg" alt="" width="220" height="152" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-faustoescobar3.jpg')}}" alt="" width="220" height="152" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>HD México lidera el Q2 en ventas para ESET</h1>
@@ -241,7 +93,7 @@ Escobar reconoció que no ha sido fácil permear una nueva  cultura de la seguri
 
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-faustoescobar.jpg" alt="" width="200" height="300" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-faustoescobar.jpg')}}" alt="" width="200" height="300" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>HD México. Seguimiento y valor agregado en la industria TIC</h1>
@@ -272,7 +124,7 @@ Escobar reconoció que no ha sido fácil permear una nueva  cultura de la seguri
 		     Ofrecemos a  nuestros clientes elementos de valor agregado como entrenamiento, soporte,  servicios de calidad, atención personalizada, áreas de investigación y, por  supuesto, el acceso a tecnologías reconocidas y líderes en el mercado. La alta  disponibilidad de las soluciones, los servicios personalizados y de primer  nivel, nuestra cultura de capacitación continua, el ofrecimiento de una  excelente relación costo-beneﬁcio y la certeza de garantizar un ROI  satisfactorio son los factores que han contribuido a nuestro posicionamiento en  el sector de la seguridad en el ámbito local y regional.<br>
 		     Continuaremos con nuestra estrategia de brindar  la mejor respuesta a las cada vez más cambiantes necesidades de las organizaciones,  y es que siempre hemos trabajado en función del mercado, de nuestros clientes y  de nuestros asociados de negocio; la meta es ir un paso adelante ofreciendo las  tecnologías más actuales y acordes a las exigencias de cada usuario, llámense  SoHo, PyME o grandes corporativos, aparte de que actualmente brindamos  servicios de valor a las instituciones de gobierno y corporativos más  importantes en México, lo cual pretendemos replicar en el mercado  latinoamericano.</p>
 		   <p>Leer reportaje original en PDF <a href="http://mundoti.net/revista/wp-content/uploads/2011/10/MundoTI_44_Mayo_2014.pdf" target="_blank">aqui</a><br>
-	       <a href="http://mundoti.net/revista/wp-content/uploads/2011/10/MundoTI_44_Mayo_2014.pdf" target="_blank"><img src="style/images/referencias_buttons.png" alt="Ver PDF" width="10" height="10"></a><br>
+	       <a href="http://mundoti.net/revista/wp-content/uploads/2011/10/MundoTI_44_Mayo_2014.pdf" target="_blank"><img src="{{ asset('bundles/app/style/images/referencias_buttons.png') }}" alt="Ver PDF" width="10" height="10"></a><br>
 	      </p>
 	      <p><strong>HD México<br>
 	        Mayorista en soluciones informáticas</strong><br>
@@ -285,7 +137,7 @@ Escobar reconoció que no ha sido fácil permear una nueva  cultura de la seguri
 		<div class="clear"></div>
     <div class="entry-content">
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-esetrewards.jpg" alt="" width="200" height="150" class="aligncenter" />
+    		<p><img src="{{ asset('bundles/app/style/images/hdmexico-nota-esetrewards.jpg') }}" alt="" width="200" height="150" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>ESET reconoce a HD México como El Mejor Partner de Latinoamérica</h1>
@@ -301,7 +153,10 @@ Escobar reconoció que no ha sido fácil permear una nueva  cultura de la seguri
 		   <p> “Este logro se alcanzó gracias al aporte de todos nuestros asociados y, por eso, trabajamos también en consolidar nuestra relación con ellos; de hecho, son los primeros a los que orientamos nuestros servicios, capacitaciones, apoyo técnico y demás iniciativas. Como mayorista, sabemos que nuestros canales merecen este reconocimiento, el cual compartimos también con todos los que trabajan con la marca ESET dentro de la familia HD”, concluyó.<br>
 	      </p>
 		   </p>
-<p><a href="http://www.securitic.com.mx/mayoristas/956-eset-reconoce-a-hd-mexico-como-el-mejor-partner-de-latinoamerica" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://itwarelatam.com/2014/05/19/eset-reconoce-a-hd-mexico/" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://esemanal.mx/2014/05/eset-reconoce-a-hd-mexico/" target="_blank"><img src="style/images/referencias-buttons.png" width="10" height="10"></a></p>
+<p><a href="http://www.securitic.com.mx/mayoristas/956-eset-reconoce-a-hd-mexico-como-el-mejor-partner-de-latinoamerica" target="_blank">
+  <img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" ></a> <a href="http://itwarelatam.com/2014/05/19/eset-reconoce-a-hd-mexico/" target="_blank">
+  <img src="{{asset('bundles/app/style/images/referencias_buttons.png') }}" alt="" width="10" height="10" ></a> <a href="http://esemanal.mx/2014/05/eset-reconoce-a-hd-mexico/" target="_blank">
+  <img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" width="10" height="10"></a></p>
 <p><strong>HD México<br>
 	        Mayorista en soluciones informáticas</strong><br>
 		     (55) 2455 5524 / 01 800 000 4369<br>
@@ -313,7 +168,7 @@ Escobar reconoció que no ha sido fácil permear una nueva  cultura de la seguri
 		<div class="clear"></div>    
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-faustoescobar2.jpg" alt="" width="250" height="180" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-faustoescobar2.jpg')}}" alt="" width="250" height="180" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>Garanticemos la seguridad de los datos con soluciones de cifrado
@@ -334,7 +189,7 @@ Carlos Soto | SecuriTIC</p>
 	        rsanchez@hdmexico.com.mx
           </p>
 		   <p>Ver la nota completa <a href="http://www.securitic.com.mx/securitic/11/Securitic-011.html" target="_blank">aqui</a><br>
-	      <a href="http://www.securitic.com.mx/securitic/11/Securitic-011.html" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a></p>
+	      <a href="http://www.securitic.com.mx/securitic/11/Securitic-011.html" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a></p>
 <p><strong>HD México<br>
 	        Mayorista en soluciones informáticas</strong><br>
 		     (55) 2455 5524 / 01 800 000 4369<br>
@@ -347,7 +202,7 @@ Carlos Soto | SecuriTIC</p>
     <div class="entry-content">
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-carrera2014.jpg" alt="" width="200" height="137" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-nota-carrera2014.jpg')}}" alt="" width="200" height="137" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>Inicia HD México Carrera por la Seguridad Informática en su edición 2014</h1>
@@ -366,7 +221,7 @@ Carlos Soto | SecuriTIC</p>
 		     Tels. 2455 5524 y  01800 000 4369<br>
 		   </p>
 		   </p>
-<p><a href="http://www.securitic.com.mx/mayoristas/836-inicia-hd-mexico-carrera-por-la-seguridad-informatica-en-su-edicion-2014" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://esemanal.mx/2014/03/inicia-hd-mexico-carrera-por-la-seguridad-informatica-2014/" target="_blank"><img src="style/images/referencias_buttons.png" width="10" height="10"></a></p>
+<p><a href="http://www.securitic.com.mx/mayoristas/836-inicia-hd-mexico-carrera-por-la-seguridad-informatica-en-su-edicion-2014" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a> <a href="http://esemanal.mx/2014/03/inicia-hd-mexico-carrera-por-la-seguridad-informatica-2014/" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" width="10" height="10"></a></p>
 <p><strong>HD México<br>
 	        Mayorista en soluciones informáticas</strong><br>
 		     (55) 2455 5524 / 01 800 000 4369<br>
@@ -380,7 +235,7 @@ Carlos Soto | SecuriTIC</p>
     <div class="entry-content">
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-esetingfausto.jpg" alt="" width="219" height="145" longdesc="style/images/ayudar.jpg">                	
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-nota-esetingfausto.jpg') }}" alt="" width="219" height="145">                	
 	    </div>
 		<div class="two-third last">
 			<h1>Reconocimientos y crecimiento en HD México</h1>
@@ -393,7 +248,7 @@ Carlos Soto | SecuriTIC</p>
 		   <p>También se entregó un reconocimiento especial a Irina Ruiz de MG Micros por su desempeño comercial, la temática de la premiación se denominó Carrera por la Seguridad Informática 2013, el evento también sirvió para destacar valores de HD en aspectos como atención personalizada, soporte técnico gratuito, ya sea remoto en sitio o vía telefónica, además de ciclos de habilitación constante.<br>
 		    
 	        </p>
-		   <p><a href="http://boletin.com.mx/industria-tic-boletin/item/562-hd-mexico-reconoce-a-su-canal-de-distribucion" target="_blank"><img src="style/images/referencias-buttons.png" alt="" longdesc="style/images/referencias-buttons.png"> <img src="style/images/referencias-buttons.png" width="10" height="10"></a> <a href="http://www.securitic.com.mx/mayoristas/815-hd-mexico-reconoce-y-premia-a-sus-mejores-socios-comerciales" target="_blank"><img src="style/images/referencias-buttons.png" width="10" height="10"></a></p>
+		   <p><a href="http://boletin.com.mx/industria-tic-boletin/item/562-hd-mexico-reconoce-a-su-canal-de-distribucion" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png') }}"> <img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" width="10" height="10"></a> <a href="http://www.securitic.com.mx/mayoristas/815-hd-mexico-reconoce-y-premia-a-sus-mejores-socios-comerciales" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" width="10" height="10"></a></p>
 	      <p><strong>HD México<br>
 	        Mayorista en soluciones informáticas</strong><br>
 		     (55) 2455 5524 / 01 800 000 4369<br>
@@ -407,7 +262,7 @@ Carlos Soto | SecuriTIC</p>
         <div class="entry-content">
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-ingenrique.jpg" alt="" width="200" height="320" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-nota-ingenrique.jpg')}}" alt="" width="200" height="320" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>Soluciones de seguridad para enfrentar los retos del BYOD (Fragmento)</h1>
@@ -439,7 +294,7 @@ Carlos Soto | SecuriTIC</p>
            >
            <p> Ante este escenario es fácil identificar que los retos de adoptar un modelo de BYOD por parte de las empresas incluyen encontrar soluciones de seguridad que se adapten a sus necesidades específicas. Por lo cual, desde pequeñas empresas hasta grandes corporativos requieren de un especialista que les ayude a resolver de la manera más adecuada sus requerimientos y esto se traduce en oportunidades de negocio tangibles para los integradores.</p
 		   >
-           <p><a href="http://www.securitic.com.mx/reportaje-especial/772-soluciones-de-seguridad-para-enfrentar-los-retos-del-byod" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a></p>
+           <p><a href="http://www.securitic.com.mx/reportaje-especial/772-soluciones-de-seguridad-para-enfrentar-los-retos-del-byod" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a></p>
            <p><strong>HD México<br>
              Mayorista en soluciones informáticas</strong><br>
              (55) 2455 5524 / 01 800 000 4369<br>
@@ -457,7 +312,7 @@ Carlos Soto | SecuriTIC</p>
 <div class="entry-content">
   
   <div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-isl.png" alt="" width="200" height="500" class="aligncenter" />
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-nota-isl.png')}}" alt="" width="200" height="500" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>HD México difunde promoción por lanzamiento de ISL Online</h1>
@@ -471,7 +326,7 @@ Carlos Soto | SecuriTIC</p>
 		   <p> Asimismo informó que para capitalizar posibilidades de negocio con la herramienta, lanzará una promoción durante los meses de febrero y  marzo, la cual incluye capacitación sin costo, descuentos especiales en las primeras compras y un kit de bienvenida.<br>
 		   </p>
 	      <p> También notificó que los distribuidores pueden solicitar una demostración en sitio o vía online, con el fin de conocer los beneficios que ISL Online ofrece. Puede contactar a Rocío Sánchez, directora comercial del mayorista al correo rsanchez@hdmexico.com.mx para mayor información.</p>
-<p><a href="http://esemanal.mx/2014/01/hd-mexico-lanza-promocion-por-lanzamiento-isl-online/" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://www.dtic.com.mx/noticias/6560-hd-mexico-presenta-su-oferta-en-el-area-de-comunicaciones-online" target="-blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a></p>
+<p><a href="http://esemanal.mx/2014/01/hd-mexico-lanza-promocion-por-lanzamiento-isl-online/" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a> <a href="http://www.dtic.com.mx/noticias/6560-hd-mexico-presenta-su-oferta-en-el-area-de-comunicaciones-online" target="-blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a></p>
 <p><strong>HD México<br>
   Mayorista en soluciones informáticas</strong><br>
   (55) 2455 5524 / 01 800 000 4369<br>
@@ -489,7 +344,7 @@ Carlos Soto | SecuriTIC</p>
     <div class="entry-content">
     
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-help.jpg" alt="" width="200" height="331" longdesc="style/images/ayudar.jpg">
+    		<p><img src="{{asset('bundles/app/style/images/hdmexico-nota-help.jpg')}}" alt="" width="200" height="331" longdesc="{{asset('bundles/app/style/images/ayudar.jpg')}}">
 	    </div>
 		<div class="two-third last">
 			<h1>HD Mayorista crece a dos digitos y comparte su éxito a través de acciones sociales</h1>
@@ -505,7 +360,7 @@ Carlos Soto | SecuriTIC</p>
 		   <p>Para registrarte puedes dar click <a href="https://islv6-groop.islonline.net/users/islgroop/register.html?session_id=239-888-929-242" target="_blank">aquí</a></p>
 		   <p>Mayor información: contacto@hdmexico.com.mx <br>
 		     Tels. 2455 5524 y  01800 000 4369<br>
-		   <p><a href="http://www.dtic.com.mx/noticias/6512-hd-mayorista-crece-a-dos-digitos-e-incorpora-actividades-de-labor-social" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://nws.internetciudad.com/nota.php?id=15218&sitename=c3ZzcmFkaW8ubm90aS5teA==&http=//svsradio.noti.mx#.U3N96_l5OoM" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a> <a href="http://nws.internetciudad.com/nota.php?id=15218&sitename=bWlsZW5pby5ub3RpLm14&http=//milenio.not" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a></p>
+		   <p><a href="http://www.dtic.com.mx/noticias/6512-hd-mayorista-crece-a-dos-digitos-e-incorpora-actividades-de-labor-social" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a> <a href="http://nws.internetciudad.com/nota.php?id=15218&sitename=c3ZzcmFkaW8ubm90aS5teA==&http=//svsradio.noti.mx#.U3N96_l5OoM" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a> <a href="http://nws.internetciudad.com/nota.php?id=15218&sitename=bWlsZW5pby5ub3RpLm14&http=//milenio.not" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a></p>
 		   <p><strong>HD México<br>
 	          Mayorista en soluciones informáticas</strong><br>
 		       
@@ -521,7 +376,7 @@ Carlos Soto | SecuriTIC</p>
 
  	</div>
     	<div class="one-third">
-    		<p><img src="style/images/hdmexico-nota-ingfausto.jpg" alt="" width="200" class="aligncenter" />
+    		<p><img src="{{asset ('bundles/app/style/images/hdmexico-nota-ingfausto.jpg')}}" alt="" width="200" class="aligncenter" />
 	    </div>
 		<div class="two-third last">
 			<h1>Planes 2014</h1>
@@ -530,7 +385,7 @@ Carlos Soto | SecuriTIC</p>
 		   <p>El portafolio del mayorista está compuesto por marcas como SpamTitan, Ultrabac, eSoft,  Eset, e ISL Online, por mencionar algunas, las cuales han demostrado una buena aceptación en el mercado mexicano.</p>
 		   <p>Parte de los planes que el mayorista tiene para sus partners incluye el desarrollo y consolidación de cada socio de negocio, para ello, ha desarrollado el programa Active Channel Program, el cual incluye varios beneficios y diversas ventajas competitivas que van desde capacitación y certificaciones sin costo hasta esquemas preferenciales de financiamiento.</p>
 		   <p>Otro punto importante es la inclusión de sus canales en proyectos de otras soluciones, ya que la mayoría de sus partners tiene como base de negocio las soluciones de ESET, entonces en 2014 el mayorista enfocará esfuerzos en aumentar los proyectos que involucran otras marcas como SpamTitan que está teniendo una buena adopción en proyectos corporativos y de gobierno.</p>
-		   <p>Adicionalmente buscará ampliar los horizontes con proyectos de colaboración a través de las soluciones de OSL Online, a fin de aumentar las posibilidades de crecimiento y abordar nuevos retos.</p><h3><a href="http://www.securitic.com.mx/reportaje-especial/733-planes-2014?showall=&start=1" target="_blank"><img src="style/images/referencias-buttons.png" alt="" width="10" height="10" longdesc="style/images/referencias-buttons.png"></a><br>
+		   <p>Adicionalmente buscará ampliar los horizontes con proyectos de colaboración a través de las soluciones de OSL Online, a fin de aumentar las posibilidades de crecimiento y abordar nuevos retos.</p><h3><a href="http://www.securitic.com.mx/reportaje-especial/733-planes-2014?showall=&start=1" target="_blank"><img src="{{asset('bundles/app/style/images/referencias_buttons.png')}}" alt="" width="10" height="10" longdesc="{{asset('bundles/app/style/images/referencias_buttons.png')}}"></a><br>
 	        </h3>
              <p><strong>HD México<br>
               Mayorista en soluciones informáticas</strong><br>
@@ -558,148 +413,4 @@ Carlos Soto | SecuriTIC</p>
 
 
 </div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo">
-		<div id="supplementary" class="four">
-		<div id="first" class="widget-area" role="complementary">
-			<aside class="widget">
-				<h5 class="widget-title">Contacto</h5>	
-				<p><strong>HD México </strong><br> (55) 2455 5524 <br>01800 000 4369 <br>contacto@hdmexico.com.mx <br>www.hdmexico.com.mx  <br></p>
-			</aside>
-			<aside class="widget">
-				<h5 class="widget-title">Nuestras marcas</h5>	
-				<div class="tagcloud">
-                    <a href='spamtitan-presentacion.htm' class='tag-link-37' title='SpamTitan' style='font-size: 10pt;'>SpamTitan</a>
-					<a href='webtitan-presentacion.htm' class='tag-link-33' title='WebTitan' style='font-size: 9pt;'>WebTitan</a>
-					<a href='isl-inicio.htm' class='tag-link-32' title='ISL Online' style='font-size: 10pt;'>ISL Online</a>
-					<a href='trustwave.htm' class='tag-link-28' title='Trustwave' style='font-size: 9pt;'>Trustwave</a>
-					<a href='ultrabac.htm' class='tag-link-27' title='Ultrabac' style='font-size: 10pt;'>Ultrabac</a>
-					<a href='eset-productos.htm' class='tag-link-376' title='ESET' style='font-size: 11pt;'>ESET</a>
-				</div>
-			</aside>
-		</div><!-- #first .widget-area -->
-<div id="second" class="widget-area" role="complementary">
-			<aside class="widget">
-				<h5 class="widget-title">Redes sociales</h5>
-				<ul>
-					<li><a href="https://twitter.com/HabeasDataMx" title="Twitter" target="_blank">Twitter</a></li>
-					<li><a href="https://www.facebook.com/HabeasDataMx" title="Facebook" target="_blank">Facebook</a></li>
-					<li><a href="https://plus.google.com/+HdmexicoMx" title="Google+" target="_blank">Google+</a></li>
-					<li><a href="http://www.slideshare.net/hdlatinoamerica" title="Slideshare" target="_blank">Slideshare</a></li>
-				</ul>
-			</aside>	
-		</div><!-- #second .widget-area -->
-		<div id="third" class="widget-area" role="complementary">
-			<aside class="widget">
-				<h5 class="widget-title">Descarga nuestro portafolio</h5>
-                    				<a href="style/docs/hdmexico-portafolio.swf" target="_blank"><img src="style/images/CV-HD.jpg" alt="Portafolio HD México"></a><br><a href="style/docs/hdmexico-portafolio.pdf" target="_blank">Descarga PDF</a>
-			</aside>
-		</div><!-- #third .widget-area -->
-		<div id="fourth" class="widget-area" role="complementary">
-			<aside class="widget">
-				<h5 class="widget-title">Recibe nuestros boletines</h5>			
-			      	<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup">
-                    	<form action="//hdmexico.us10.list-manage.com/subscribe/post?u=9e1311c73a4a7ce72d57461c4&amp;id=808b900fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    						<div id="mc_embed_signup_scroll">
-							<div class="mc-field-group"><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Correo electrónico"></div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div> 
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    						<div style="position: absolute; left: -5000px;"><input type="text" name="b_9e1311c73a4a7ce72d57461c4_808b900fe4" tabindex="-1" value=""></div>
-    						<div class="clear"><input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-   						</div>
-						</form>
-					</div>
-							<!--End mc_embed_signup-->
-				</aside>
-			</div><!-- #fourth .widget-area -->
-		</div><!-- #supplementary -->
-		<div id="site-generator">
-			Copyright 2015 - HD Latinoamérica S.A. de C.V.
-		</div>
-	</footer><!-- #colophon -->
-  </div><!-- #wrapper -->
-</div><!-- #page -->
-<script type="text/javascript" src="style/js/scripts.js"></script>
-<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-<!-- begin Flotante code -->
-<style>
-#hcr {
-position:fixed;
-top:60px;
-z-index:+1000;
-}
-* html #hcr {position:relative;}
-.hcrtab {
-height:100px;
-width:30px;
-float:left;
-cursor:pointer;
-background:url('./style/images/ChatBox5.png') no-repeat;
-}
-.hcrcontent {
-float:left;
-border:2px solid #A3ADB2;
-background:#FFFFFF;
-padding:10px;
-}
-.hc-credit {font-size:9px}
-.hc-credit a {text-decoration:none}
-</style>
-<script type="text/javascript">
-function showHidehcr(){
-var hcr = document.getElementById("hcr");
-var w = hcr.offsetWidth;
-hcr.opened ? movehcr(0, 30-w) : movehcr(20-w, 0);
-hcr.opened = !hcr.opened;
-}
-function movehcr(x0, xf){
-var hcr = document.getElementById("hcr");
-var dx = Math.abs(x0-xf) > 10 ? 5 : 1;
-var dir = xf>x0 ? 1 : -1;
-var x = x0 + dx * dir;
-hcr.style.right = x.toString() + "px";
-if(x0!=xf){setTimeout("movehcr("+x+", "+xf+")", 10);}
-}
-</script>
-<div id="hcr">
-<div class="hcrtab" onclick="showHidehcr()"> </div>
-<div class="hcrcontent">
-<!-- CHAT BOX CODE HERE -->
-<a id="islpronto_link" href="mailto:soporte@hdmexico.com.mx"><img width="240" height="142" style="border:none" title="Chat en vivo" id="islpronto_image" alt="Live Chat" src="http://hdmexico.com.mx/soporte_files/islpronto-message.jpg"/></a>
-<script type="text/javascript" src="http://islpronto.islonline.net/live/islpronto/public/chat.js?d=HDMEXICO&lang=es"></script>
-<!-- END CHAT BOX CODE --->
-<br />
-<div class="hc-credit">
-<span style="float:right">
-<a href="javascript:showHidehcr()">
-[Cerrar]
-</a>
-</span>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-var hcr = document.getElementById("hcr");
-hcr.style.right = (30-hcr.offsetWidth).toString() + "px";
-</script>
-</div>
-<div class='clear'></div>
-<span class='widget-item-control'>
-<span class='item-control blog-admin'>
-<a class='quickedit' href='//www.blogger.com/rearrange?blogID=6756021128688737735&widgetType=HTML&widgetId=HTML7&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML7"));' target='configHTML7' title='Editar'>
-</a>
-</span>
-</span>
-<div class='clear'></div>
-</div></div>
-</div>
-<div class='clear'></div>
-</div>
-<div class='clear'></div>
-</div>
-<!-- END Flotante DEEP LINK CODE -->
-</html>
+{% endblock %}
